@@ -1,0 +1,54 @@
+// transition组件name名
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slide-left-leave {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-left-leave-to {
+  transform: translateX(-375px);
+  opacity: 0;
+}
+
+.slide-left-enter {
+  transform: translateX(375px);
+  opacity: 0;
+}
+
+.slide-left-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active  {
+  transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.slide-right-leave {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-right-leave-to {
+  transform: translateX(375px);
+  opacity: 0;
+}
+.slide-right-enter {
+  transform: translateX(-375px);
+  opacity: 0;
+}
+.slide-right-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}

@@ -1,4 +1,4 @@
-# vuex-test
+# vue maomaoApp
 
 ## Project setup
 ```
